@@ -3,6 +3,7 @@ import { Router as RemixRouter} from "@remix-run/router";
 import Home from '../pages/Home/Home';
 import Introduction from '../pages/Introduction/Introduction';
 import Dashboard from '../pages/Dashboard/Dashboard';
+import MemoryLeak from '../pages/MemoryLeak/MemoryLeak';
 
 // this is first way
 
@@ -37,6 +38,10 @@ const RouteConfig: RemixRouter = createBrowserRouter([
             {
                 path: 'dashboard',
                 element: <Dashboard/>
+            },
+            {
+                path: 'memory-leak',
+                element: <MemoryLeak/>
             }
         ]
     }

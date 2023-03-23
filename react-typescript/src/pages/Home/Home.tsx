@@ -12,6 +12,9 @@ const Home: FC = (): JSX.Element =>{
             <li>
             <NavLink to={'/dashboard'}>Dashboard</NavLink>
             </li>
+            <li>
+                <NavLink to={'/memory-leak'}>Memory Leak</NavLink>
+            </li>
         </ul>
         <Outlet/>
         </>
